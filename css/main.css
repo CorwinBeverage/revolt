@@ -113,6 +113,13 @@ body {
   white;
 }
 
+.hero__organic-logo {
+  position: relative;
+  top: 16px;
+  width: 86px;
+  height: 86px;
+}
+
 .hero .wrapper {
   top: -30px;
 }
@@ -355,13 +362,13 @@ body {
   font-size: 24px;
   position: relative;
   color: #ff4338;
+  margin-top: 32px;
 }
 
 .flavors__category {
   display: block;
   color: #513628;
   font-size: 16px;
-  margin-top: 32px;
 }
 
 .flavors__list-item--organic {
@@ -482,7 +489,7 @@ body {
 .footer__social-container {
   display: flex;
   flex-flow: row wrap;
-  max-width: 300px;
+  max-width: 200px;
   justify-content: space-between;
   margin: 48px auto;
 }
@@ -574,6 +581,10 @@ body {
     padding-left: 0;
     text-align: left;
   }
+
+  .hero__organic-logo {
+    top: auto;
+}
 
   .c-store-gallery {
     background-image: url('../images/gallery-background-lg.gif');
