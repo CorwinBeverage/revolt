@@ -1,117 +1,150 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="Revolt Coffee" content="Revolt Coffee is an premium brand of all-organic coffee.">
-        <title>Revolt Coffee</title>
-        <link rel="stylesheet" href="css/jquery.countdown.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.typekit.net/jgm2yjp.css">
-        <style>
-            * {
-            box-sizing: border-box;
-            }
-            html, body {
-            height: 100%;
-            }
-            body {
-            margin: 0;
-            padding: 0;
-            background: black;
-            height: 100%;
-            position: relative;
-            }
-            .wrapper {
-            }
-            .timer {
-            padding: 16px;
-            }
-            .timer__header {
-            text-align: center;
-            font-family: "amboy-black", amboy, sans-serif;
-            font-size: 28px;
-            color: #ff4338;
-            }
-            .timer__copy {
-            text-align: center;
-            font-family: 'Raleway', sans-serif;
-            line-height: 23px;
-            color: white;
-            }
-            #defaultCountdown {
-            font-family: "amboy-black", amboy, sans-serif;
-            font-style: normal;
-            }
-            .countdown-section {
-            font-size: 16px;
-            margin: 16px;
-            }
-            .countdown-amount {
-            font-size: 300%;
-            }
-            .countdown-period {
-            color: #ff4338;
-            }
-            .countdown-descr {
-            }
-            .is-countdown {
-            background: white;
-            }
-            .timer__logo {
-            display: block;
-            margin: 0 auto;
-            max-width: 500px;
-            }
-            @media screen and (min-width: 500px) {
-            .countdown-row {
-            display: flex;
-            justify-content: space-around;
-            }
-            .wrapper {
-            width: 90%;
-            margin: 0 auto;
-            padding-top: 64px;
-            }
-            .timer__logo {
-            width: 452px;
-            height: 145px;
-            }
-            .timer__header {
-            margin: 48px 0;
-            }
-            }
-            @media screen and (min-width: 600px) {
-            }
-            @media screen and (min-width: 700px) {
-            .wrapper {
-            width: 560px;
-            }
-            }
-        </style>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="js/jquery.plugin.min.js"></script>
-        <script src="js/jquery.countdown.js"></script>
-        <script>
-            $(function () {
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <title>Revolt Organic Coffee</title>
 
-            	var austDay = new Date();
-            	austDay = new Date(austDay.getFullYear() + 1, 1 - 1, 26);
-            	$('#defaultCountdown').countdown({until: new Date(2018, 4-1, 1)});
-            	$('#year').text(austDay.getFullYear());
-            });
-        </script>
-    </head>
-    <body>
-        <div class="wrapper">
-            <!-- Timer credits: http://keith-wood.name/countdown.html -->
-            <div class="timer">
-                <img class="timer__logo" src="images/site-logo.svg" alt="Revolt Coffee logo">
-                <h1 class="timer__header">Get ready for the coffee revolution</h1>
-                <p class="timer__copy">Revolt Coffee is a premium brand of all-organic coffee.<br />Website launching soon.</p>
-                <div id="defaultCountdown"></div>
-            </div>
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/jgm2yjp.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+  <header class="head">
+
+    <div class="head__logo-wrapper">
+      <img class="head__logo" src="images/site-logo.svg">
+    </div>
+
+    <a class="head__brochure-link" href="#">Download Brochure</a>
+
+    <div class="head__social_container">
+      <a class="head__social-link head--facebook" href="#">Find us on Facebook</a>
+      <a class="head__social-link head--twitter" href="#">Find us on Twitter</a>
+      <a class="head__social-link head--instagram" href="#">Find us on Instagram</a>
+    </div>
+
+  </header>
+
+  <div class="hero">
+    <div class="wrapper">
+      <img class="hero__cups" src="images/hero-cups-small.png">
+      <h3 class="hero__h3">The Manifesto</h3>
+      <p class="hero__p"><span class="hero__p-highlight">Scorn mediocre coffee.</span> Revoke bad beans. Rebel against bitter drip. Your taste buds deserve more. Revolt Coffee is locally, expertly roasted by individuals who wake up each day to inflame a coffee revolt.</p>
+      </div>
+  </div>
+
+  <div class="features wrapper">
+    <ul class="features__list">
+      <li class="features__list-item"><h3 class="features__list-label">All Organic</h3></li>
+      <li class="features__list-item features--locally-roasted"><h3 class="features__list-label">Locally Roasted</h3></li>
+    </ul>
+  </div>
+
+  <div class="section section--coffee-more">
+
+    <div class="wrapper">
+      <h3 class="section__headline">Coffee and more</h3>
+      <p class="section__p section--t-shirt-p">We offer a variety of other coffee service products in addition to our coffees including creamers, syrups, sauces, cappuccino mixes, Bigelow teas, blended smoothies, hot and cold cups, and condiments. To learn more, <a href="#">email us</a> or call us at : (888) 855-4458.</p>
+      <img class="section__shirt-photo" src="images/t-shirt.jpg" alt="Photo of a t-shirt with the Revolt logo">
+    </div>
+  </div>
+
+  <div class="c-store">
+      <div class="c-store_wrapper">
+        <h2 class="c-store__headline">Take your c-store coffee <br>program to the next level.</h2>
+    </div>
+  </div>
+
+
+  <div class="c-store-gallery">
+    <div class="c-store__image-box">
+      <picture>
+        <source media="(max-width: 500px)" srcset="images/coffee-bar.png">
+        <img src="images/c-store-mockups.png" class="c-store-gallery-mockup" alt="Revolt Coffee covnenience store coffee bar display">
+      </picture>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrapper">
+      <h3 class="section__headline">Availability</h3>
+      <p class="section__p">Revolt Coffee is distributed exclusively by Corwin Beverage. We are available in four Southwest Washington counties (Clark, Wahkiakum, Skamania, Cowlitz)</p>
+      <p class="section__p">To learn more about creating a custom beverage program for your C-store, <a href="#">email us</a> or call us at : (888) 855-4458.</p>
+    </div>
+  </div>
+
+  <div class="quote">
+    <div class="wrapper">
+      <blockquote class="quote__text">Revolution is not a one time event. It’s every moment.</blockquote>
+    </div>
+  </div>
+
+  <div class="flavors">
+    <div class="wrapper">
+      <h2 class="flavors__title">Demand Your Roast</h2>
+      <ul class="flavors__list">
+        <li class="flavors__list-item">Peaceful Protest<span class="flavors__category">Decaf Roast</span></li>
+        <li class="flavors__list-item">Uprising<span class="flavors__category">Light Roast</span></li>
+        <li class="flavors__list-item">Take Action<span class="flavors__category">Medium Roast</span></li>
+        <li class="flavors__list-item">Rebellion<span class="flavors__category">Dark Roast</span></li>
+        <li class="flavors__list-item">Power to the People<span class="flavors__category">High-Caffeine Roast</span></li>
+        <li class="flavors__list-item--organic">All Revolt coffee is certified USDA Organic.</li>
+      </ul>
+
+    </div>
+  </div>
+
+
+  <div class="section section--red">
+    <div class="wrapper">
+      <h2 class="section__headline">Follow the Revolution</h2>
+      <p class="section__p">Join our email list for the latest product news and availablity.</p>
+      <form class="section__form">
+
+        <div class="form__label-field-group">
+          <label for="form__name">Name</label>
+          <input class="section__field" id="form__name" type="text">
         </div>
-    </body>
+
+        <div class="form__label-field-group">
+          <label for="form__email">Email</label>
+          <input class="section__field" id="form__email" type="text">
+        </div>
+
+        <div class="form__submit-container">
+        <input class="form__submit" type="submit" value="Sign Up">
+      </div>
+
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+
+    <img class="footer__logo" src="images/site-logo.svg">
+    <div class="footer__social-container">
+      <a class="footer__social-link footer--facebook" href="#">Find us on Facebook</a>
+      <a class="footer__social-link footer--twitter" href="#">Find us on Twitter</a>
+      <a class="footer__social-link footer--instagram" href="#">Find us on Instagram</a>
+    </div>
+
+    <div class="footer__address">
+      <span class="footer__break footer__break-phone" >(360) 696-0766219</span>
+      <span class="footer__break">219 S Timm Road</span>
+      <span class="footer__break">Ridgefield, WA 98642</span>
+    </div>
+
+    <small class="footer__copyright">© COPYRIGHT 2017, Revolt Coffee</small>
+
+  </div>
+
+
+</body>
 </html>
