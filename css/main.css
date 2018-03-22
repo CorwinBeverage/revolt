@@ -489,7 +489,7 @@ body {
 .footer__social-container {
   display: flex;
   flex-flow: row wrap;
-  max-width: 200px;
+  max-width: 150px;
   justify-content: space-between;
   margin: 48px auto;
 }
