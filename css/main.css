@@ -838,6 +838,10 @@ body {
 
   .CTA {
     padding-top: 0;
+    padding-left: 125px;
+    padding-right: 16px;
+    text-align: left;
+
   }
 
   .CTA:before {
@@ -846,8 +850,12 @@ body {
 
   .CTA__headline {
     text-align: left;
-    padding-left: 125px;
+    padding-left: 0;
   }
+
+}
+
+@media screen and (min-width: 800px) {
 
   .CTA__email {
     padding: 3px 50px 3px 0;
@@ -855,14 +863,7 @@ body {
 }
 
 
-.CTA__list-item span {
-  display: inline;
-  padding-right: 15px;
-}
 
-.CTA__list-item span:after {
-  content: " :";
-}
 
 
 }
@@ -912,7 +913,16 @@ body {
     border-right: 1px solid #ccc;
   }
 
+}
 
+@media screen and (min-width: 1100px) {
 
+  .CTA__list-item span {
+    display: inline;
+    padding-right: 15px;
+  }
 
+  .CTA__list-item span:after {
+    content: " :";
+  }
 }
