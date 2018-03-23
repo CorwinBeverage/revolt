@@ -613,6 +613,31 @@ body {
 
 }
 
+/* Mailchimp signup form */
+
+#mc_embed_signup label {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal !important; /* ¯\_(ツ)_/¯  ...yeah, I know... */
+}
+
+#mc_embed_signup input.email {
+  font-family: 'Raleway', sans-serif !important;
+}
+
+#mc_embed_signup input.email {
+  height: 60px;
+  border: none;
+}
+
+#mc_embed_signup input.button {
+  font-family: "amboy-black",sans-serif;
+  color: white;
+  border: none;
+  background: #c1272d;
+  cursor: pointer;
+  height: 60px;
+}
+
 
 /* Media queries */
 
